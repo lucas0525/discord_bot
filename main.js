@@ -20,6 +20,6 @@ bot.on("guildMemberRemove", member => {
     bot.channels.cache.get("1025813726126940250").send("Malheuresement " + member.displayName + " nous a quitté trop vite.")
 })
 
-bot.login(config.token)
+bot.login(process.on.TOKEN)
 loadCommands(bot)
 loadEvents(bot)
